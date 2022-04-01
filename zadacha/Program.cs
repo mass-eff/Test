@@ -13,3 +13,15 @@ for (int i = 0; i < massiv.Length; i++)
 {
     Console.Write(massiv[i] + " "); // демностирую заполенный изначальный массив
 }
+Console.WriteLine();
+int  LENGTH = 3; // ввожу ограничитель длины элемента массива
+int j = 0; // переменная для перебора элементов формируемого массива
+string [] result = new string [massiv.Length]; // объявляю формируемый массив
+for (int i = 0; i < massiv.Length; i++)
+{
+if(massiv[i].Length<=LENGTH)
+{
+result[j] = massiv[i]; // заполняю формруемый массив элементами изначальнго массива согласно условию задачи
+j++;
+}
+}
